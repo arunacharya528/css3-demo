@@ -1,0 +1,30 @@
+.promotion {
+  margin-top: 10rem;
+  position: relative;
+}
+
+.promotion__detail {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  background-color: var(--base-100);
+
+  width: 40%;
+  margin: 2rem;
+
+  border-radius: var(--base-radius);
+
+  padding: 0.8rem 2rem;
+}
+
+.promotion__title {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.promotion__title--primary {
+  color: var(--primary);
+}

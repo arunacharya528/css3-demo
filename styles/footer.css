@@ -1,0 +1,118 @@
+:root {
+  --footer-border: #979797;
+  --foot-color: #0f2435;
+  --footer-color: #0c1d2a;
+  --footer-text: rgb(200, 200, 200);
+  --footer-input: #1f3648;
+}
+.foot {
+  background-color: var(--foot-color);
+  color: rgb(200, 200, 200);
+  padding: 5rem 0;
+}
+.foot > .container {
+  display: flex;
+}
+.foot__title {
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+.foot__contents {
+  width: 25%;
+  padding-right: 6rem;
+}
+.foot__contacts{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-gap: 1.5rem;
+
+    border-top: 3px solid var(--footer-border);
+    padding-top: 2rem;
+}
+.foot__links {
+  flex-grow: 1;
+}
+
+.foot__links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style-type: "\00BB";
+  padding: 0;
+  margin-left: 1rem;
+}
+
+.foot__link {
+  padding-left: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+.foot__link > a {
+  text-decoration: none;
+  color: var(--footer-text);
+}
+
+.foot__link > a:hover{
+    text-decoration: underline;
+}
+
+.foot__link::marker {
+  line-height: 0;
+  font-size: 2rem;
+  color: var(--primary);
+  display: block;
+  margin: 0.5rem;
+}
+
+.foot__media {
+  width: 25%;
+}
+.foot__media-subscribe {
+  border-bottom: 3px solid;
+  padding-bottom: 2rem;
+}
+.foot__media-subscribe-label {
+  display: block;
+}
+
+.foot__media-subscribe-input {
+  border: none;
+  background-color: var(--footer-input);
+  padding: 0.8rem;
+  border-radius: var(--button-radius);
+  font-weight: bold;
+  margin-top: 2rem;
+  color: var(--footer-text);
+}
+.foot__media-subscribe-button {
+  font-weight: bold;
+}
+
+.foot__media-subscribe-helper {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.footer {
+  background-color: var(--footer-color);
+  color: var(--footer-text);
+  padding: 2rem 0;
+}
+
+.footer > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__owner--primary {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.footer__link {
+  text-decoration: none;
+  color: var(--footer-text);
+}
+
+.footer__link:hover{
+    text-decoration: underline;
+}

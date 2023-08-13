@@ -1,0 +1,48 @@
+:root {
+  --input-border: #bdbdbd;
+  --input-background: #f2f2f273;
+}
+
+.form__group {
+  padding-bottom: 1rem;
+}
+
+.form__label {
+  display: block;
+  color: var(--primary);
+  padding-bottom: 0.5rem;
+}
+
+.form__input {
+  border: 1px solid var(--input-border);
+  background-color: var(--input-background);
+  border-radius: var(--button-radius);
+  padding: 0.8rem;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: var(--base-font);
+}
+
+.form__select {
+  display: block;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-background);
+  border-radius: var(--button-radius);
+  padding: 0.8rem;
+  width: 100%;
+  appearance: none;
+  font-family: var(--base-font);
+  background: transparent;
+  background-image: url("../../assets/svg/select-down.svg");
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: 0.5rem;
+  background-color: var(--input-background);
+}
+
+.form__input:focus,
+.form__select:focus {
+  border: 1px solid var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary);
+}

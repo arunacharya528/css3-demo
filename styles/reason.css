@@ -1,0 +1,65 @@
+:root {
+  --reason-blue: #ecf3fe;
+  --reason-yellow: #fef8e6;
+  --reason-red: #fdf4f0;
+  --reason-green: #e7faf3;
+  --reason-purple: #f1f1fb;
+}
+
+.reason {
+  width: 65%;
+  padding-top: 8rem;
+  text-align: center;
+}
+.reason__title{
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.reason__explanation {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+.reason__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-gap: 2rem;
+  margin-top: 5rem;
+}
+
+.reason__grid-item {
+  padding: 2rem 0;
+  border-radius: var(--button-radius);
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.reason__grid-item-icon{
+    margin-bottom: -3px;
+    margin-right: 1rem;
+}
+
+.reason__grid-item--background-blue {
+  background-color: var(--reason-blue);
+}
+
+.reason__grid-item--background-yellow {
+  background-color: var(--reason-yellow);
+}
+
+.reason__grid-item--background-red {
+  background-color: var(--reason-red);
+}
+
+.reason__grid-item--background-green {
+  background-color: var(--reason-green);
+}
+
+.reason__grid-item--background-purple {
+  background-color: var(--reason-purple);
+}

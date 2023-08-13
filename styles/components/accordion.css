@@ -1,0 +1,68 @@
+.accordion{
+    cursor: pointer;
+}
+
+.accordion__body {
+  border-radius: var(--base-radius);
+
+  padding: 1.5rem;
+  padding-right: 4rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+
+  border: 1px solid #dedede;
+
+  display: block;
+  width: 100%;
+
+  transition: all .15s ease-in-out;
+}
+.accordion__checkbox {
+  display: none;
+}
+
+.accordion__body::after {
+  content: url("../../assets/svg/accordion-right.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: fit-content;
+  padding: 0 1.5rem;
+}
+
+.accordion__title {
+  font-weight: 600;
+}
+
+.accordion__body > .accordion__content {
+  margin-top: 1.5rem;
+  display: none;
+}
+.accordion__checkbox:checked + .accordion__body{
+    border: 1px solid #f0f8f8;
+    box-shadow: 0px 10px 40px 0px #0000000d;
+}
+.accordion__checkbox:checked + .accordion__body::after {
+  animation: 0.5s change-arrow forwards;
+}
+.accordion__checkbox:checked + .accordion__body > .accordion__content {
+  display: block;
+}
+
+@keyframes change-arrow {
+  0% {
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  95% {
+  }
+  100% {
+    content: url("../../assets/svg/accordion-down-green.svg");
+  }
+}

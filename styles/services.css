@@ -1,0 +1,116 @@
+:root {
+  --services-blue: #267bff;
+  --services-cyan: #21daff;
+  --services-orange: #ff834b;
+  --services-purple: #e72aff;
+  --services-light: #999999;
+}
+
+.services {
+  margin-top: 10rem;
+}
+
+.services__heading {
+  text-align: center;
+}
+
+.services__description {
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  padding: 6rem;
+}
+
+.services__item {
+  border: 1px solid black;
+  padding: 1.8rem;
+  padding-top: 2rem;
+  border-radius: var(--base-radius);
+  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
+}
+.services__item-heading {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+.service__item-description {
+  width: 90%;
+  color: var(--services-light);
+}
+
+.service__item-link {
+  display: block;
+  margin-top: 2rem;
+}
+
+.services__item--border--blue {
+  border: 2px solid var(--services-blue);
+}
+
+.services__item-heading--blue {
+  color: var(--services-blue);
+}
+
+.services__item-icon-head--blue {
+  stroke: var(--services-blue);
+}
+
+.service__item-icon-foot--blue {
+  stroke: var(--services-blue);
+}
+
+.services__item--border--cyan {
+  border: 2px solid var(--services-cyan);
+}
+
+.services__item-heading--cyan {
+  color: var(--services-cyan);
+}
+
+.services__item-icon-head--cyan {
+  stroke: var(--services-cyan);
+}
+
+.service__item-icon-foot--cyan {
+  stroke: var(--services-cyan);
+}
+
+.services__item--border--orange {
+  border: 2px solid var(--services-orange);
+}
+
+.services__item-heading--orange {
+  color: var(--services-orange);
+}
+
+.services__item-icon-head--orange {
+  stroke: var(--services-orange);
+}
+
+.service__item-icon-foot--orange {
+  stroke: var(--services-orange);
+}
+
+.services__item--border--purple {
+  border: 2px solid var(--services-purple);
+}
+
+.services__item-heading--purple {
+  color: var(--services-purple);
+}
+
+.services__item-icon-head--purple {
+  stroke: var(--services-purple);
+}
+
+.service__item-icon-foot--purple {
+  stroke: var(--services-purple);
+}

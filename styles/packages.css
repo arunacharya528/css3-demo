@@ -1,0 +1,127 @@
+.packages {
+  margin-top: 10rem;
+  background-color: var(--base-200);
+  height: 80vh;
+  overflow-y: visible;
+  padding-top: 5rem;
+}
+
+.packages__title {
+  width: fit-content;
+  margin: auto;
+  line-height: 5.5rem;
+}
+
+.packages__description {
+  width: 53%;
+  margin: auto;
+  text-align: center;
+}
+
+.packages__lists {
+  margin-top: 5rem;
+  display: flex;
+}
+
+.packages__main {
+  background-color: var(--base-100);
+  padding: 1rem;
+  border-radius: var(--base-radius);
+  width: 50%;
+  box-shadow: 0 0 10px -7px rgba(0, 0, 0, 0.5);
+}
+
+.packages__sub-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1.5rem 0;
+}
+
+.packages__main-items {
+  background-color: var(--base-200);
+  border-radius: var(--button-radius);
+  list-style: none;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+.packages__main-item {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.packages__main-item::before {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("../assets/svg/check-circle.svg");
+  background-size: contain;
+  margin-right: 0.5rem;
+  vertical-align: bottom;
+}
+
+.packages__main-price-block {
+  margin-top: 1rem;
+  background-color: var(--base-200);
+  border-radius: var(--button-radius);
+  padding: 0.5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.packages__main-price-title {
+  display: block;
+  font-size: 0.8rem;
+}
+.packages__main-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.packages__main-price--old {
+  text-decoration: line-through;
+}
+
+.packages__main-price-column {
+  padding: 1rem 0;
+}
+
+.packages__main-price-column + .packages__main-price-column {
+  padding-left: 3rem;
+  border-left: 1px dashed black;
+}
+
+.packages__feature {
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.packages__feature-description {
+  font-size: 1.3rem;
+}
+
+.packages__feature-items {
+  background-color: var(--base-200);
+  border-radius: var(--button-radius);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.packages__feature-item {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.packages__feature-item::before {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("../assets/svg/double-check-green-list.svg");
+  background-size: contain;
+  margin-right: 2.5rem;
+  vertical-align: bottom;
+}

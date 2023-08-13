@@ -1,0 +1,89 @@
+:root {
+  --process-map-cyan: #c1ffff;
+  --process-map-green: #b7ffe4;
+  --process-map-blue: #bbd5ff;
+  --process-map-orange: #fcbfa3;
+  --process-map-purple: #bebeff;
+}
+
+.process-map {
+  margin-top: 10rem;
+  display: flex;
+  position: relative;
+}
+
+.process-map__content{
+    position: absolute;
+    top: -2rem;
+    left: 5%;
+    width: 35%;
+}
+
+.process-map__title{
+    width: 65%;
+}
+.process-map__button-group{
+    margin-top: 3rem;
+}
+.process-map__path {
+  width: fit-content;
+  margin-left: auto;
+  position: relative;
+}
+
+.process-map__path-vector {
+  padding: 2.5rem 5rem;
+}
+
+.process-map__checkpoint {
+  border-radius: var(--base-radius);
+
+  width: 10rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  height: fit-content;
+
+  position: absolute;
+}
+
+.process-map__checkpoint--sign-up {
+  background-color: var(--process-map-cyan);
+  top: 0;
+  left: 30%;
+}
+
+.process-map__checkpoint--review-order {
+  background-color: var(--process-map-green);
+  top: 14%;
+  right: 0;
+}
+
+.process-map__checkpoint--preview-order {
+  background-color: var(--process-map-blue);
+  left: 0;
+  right: 0;
+  top: 40%;
+  margin: auto;
+}
+
+.process-map__checkpoint--make-payment {
+  background-color: var(--process-map-orange);
+  left: 0;
+  bottom: 21%;
+}
+
+.process-map__checkpoint--delivery {
+  background-color: var(--process-map-purple);
+  left: 48%;
+  bottom: 0;
+}
+
+.process-map__checkpoint-title {
+  display: block;
+  text-transform: capitalize;
+}
+
+.process-map__checkpoint-icon + .process-map__checkpoint-title {
+  margin-top: 0.5rem;
+}
+

@@ -1,0 +1,59 @@
+.calculator {
+  box-sizing: border-box;
+  width: 72%;
+}
+
+.calculator__header {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.calculator__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: var(--base-radius);
+  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
+}
+
+.calculator__inputs {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calculator__input--width-50 {
+  width: 48%;
+}
+
+.calculator__input--width-50 + .calculator__input--width-50 {
+  margin-left: 1rem;
+}
+.calculator__input--width-33 {
+  padding-top: 2rem;
+  width: 27.5%;
+}
+
+.calculator__input--width-33 + .calculator__input--width-33 {
+  margin-left: 4rem;
+}
+.calculator__submission-section {
+  width: 20%;
+}
+.calculator__calculated-price {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  border-style: none none dotted none;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.calculator__submit-button {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}

@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: var(--base-font);
+}
+
+.container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title{
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.description{
+  font-size: 0.9rem;
+}
+
+.sub-title{
+  font-size: 1.2rem;
+  font-weight: 500;
+}

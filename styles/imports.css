@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary: #55bdb3;
+  --primary-content: white;
+  --primary-focus: #49a097;
+
+  --secondary: #0f2435;
+  --secondary-content: white;
+  --secondary-focus: #0a1925;
+
+  --base-100: #ffffff;
+  --base-200: #f0f8f8;
+
+  --base-content: rgb(37, 37, 37);
+
+  --base-radius: 1rem;
+  --button-radius: 0.5rem;
+
+  --base-font: "Outfit", sans-serif;
+
+  --text-light:#C4C4C4;
+}
